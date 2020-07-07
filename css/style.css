@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    color: rgb(131, 174, 180);
+    font-family: sans-serif;
+}
+
+
+
+/*NAVBAR*/
+nav{
+    padding: 0;
+}
+.navbar{
+    background-color:rgba(177, 199, 206, 0.3);
+    margin-top: 1em;
+}
+.navbar .nav-link{
+    padding: auto 40px;
+}
+.navbar a{
+    color: black;
+    transition: all 0.3s;
+}
+.navbar a:hover{
+    background-color: rgb(162, 185, 184);
+}
+
+
+
+/*HEADER*/
+.header{
+    width: 100%;
+    height: 100vh;
+    margin: 5em 0;
+}
+.header h1{
+    font-size: 5em;
+    font-weight: 300;
+}
+
+
+
+/*LIST_OF_CLASS*/
+.menu{
+    background-color: rgb(131, 174, 180);
+    color: white;
+    padding: 4em 0;
+}
+
+
+/*RATING*/
+.rating{
+    padding: 5em 0;
+    background-image: url('../images/woman-practicing-yoga-3735474.jpg');
+    position: relative;
+}
+.rating::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+}
+.rating >*{
+    z-index: 10;
+    position: relative;
+}
+
+.rating .circle{
+    border: 5px solid rgb(131, 174, 180);
+    border-radius: 50%;
+    padding: 30px;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+
+/*INSTRUCTOR*/
+.instructor{
+    background-color: rgb(131, 174, 180);
+    color: white;
+}
+
+
+
+/*INFO_1*/
+.info-1 .container{
+    margin: 5em auto;
+}
+
+
+/*PRICE*/
+.price{
+    background-color: rgb(131, 174, 180);
+    color: white;
+    padding: 5em 0;
+}
+.price .card{
+    color: rgb(131, 174, 180);
+}
+
+
+/*INFO_2*/
+.info-2{
+    margin: 5em auto;
+}
+
+/*SUBSCRIBE*/
+.subscribe{
+    background-color: rgb(131, 174, 180);
+    color: white;
+    padding: 5em 0;
+}
+
+.subscribe input{
+    width: 80%;
+    border: none;
+    border-radius: 15px;
+}
+.subscribe button{
+    margin-right: 0;
+    border: none;
+    background-color: white;
+    color: rgb(131, 174, 180);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+
+/*FOOTER*/
+.footer{
+    margin: 5em auto;
+}
+.footer ul{
+    list-style-type: none;
+}
