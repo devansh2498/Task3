@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -7,25 +10,30 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    color: rgb(131, 174, 180);
+    color: #6B9893;
     font-family: sans-serif;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
 }
 
-
+h1{
+    font-family: 'Baloo 2', cursive;
+}
 
 /*NAVBAR*/
-nav{
-    padding: 0;
-}
 .navbar{
     background-color:rgba(177, 199, 206, 0.3);
     margin-top: 1em;
+    position: relative;
+    padding: 0;
 }
 .navbar .nav-link{
     padding: auto 40px;
 }
 .navbar a{
     color: black;
+    font-family: 'Baloo 2', cursive;
     transition: all 0.3s;
 }
 .navbar a:hover{
@@ -49,7 +57,7 @@ nav{
 
 /*LIST_OF_CLASS*/
 .menu{
-    background-color: rgb(131, 174, 180);
+    background-color: #6B9893;
     color: white;
     padding: 4em 0;
 }
@@ -58,7 +66,8 @@ nav{
 /*RATING*/
 .rating{
     padding: 5em 0;
-    background-image: url('../images/woman-practicing-yoga-3735474.jpg');
+    background-image: url('../images/bg-1.jpg');
+    background-size: cover;
     position: relative;
 }
 .rating::after{
@@ -67,7 +76,7 @@ nav{
     height: 100%;
     position: absolute;
     background-color: white;
-    opacity: 0.6;
+    opacity: 0.8;
     top: 0;
     left: 0;
 }
@@ -77,18 +86,35 @@ nav{
 }
 
 .rating .circle{
-    border: 5px solid rgb(131, 174, 180);
+    border: 3px solid #6B9893;
     border-radius: 50%;
-    padding: 30px;
-    box-sizing: border-box;
-    width: 50%;
+    width: 15em;
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
 /*INSTRUCTOR*/
 .instructor{
-    background-color: rgb(131, 174, 180);
+    background-color: #6B9893;
     color: white;
+}
+.instructor h1{
+    font-size: 4em;
+}
+.instructor a{
+    background-color: white;
+    color:#6B9893 ;
+    padding: 1em 2em;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.instructor a:hover{
+    background-color: rgb(83, 107, 104);
+    color:white ;
 }
 
 
@@ -97,16 +123,46 @@ nav{
 .info-1 .container{
     margin: 5em auto;
 }
+.info-1 h1{
+    font-size: 4em;
+}
+.info-1 img{
+    width: 80%;
+}
+.info-1 a{
+    background-color: #6B9893;
+    color:white ;
+    padding: 1em 2em;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.info-1 a:hover{
+    background-color: rgb(83, 107, 104);
+    color:white ;
+}
+
 
 
 /*PRICE*/
 .price{
-    background-color: rgb(131, 174, 180);
+    background-color: #6B9893;
     color: white;
     padding: 5em 0;
 }
 .price .card{
-    color: rgb(131, 174, 180);
+    color: #6B9893;
+    padding: 1em;
+}
+.price a{
+    background-color: #6B9893;
+    color:white ;
+    padding: 1em 2em;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.price a:hover{
+    background-color: rgb(83, 107, 104);
+    color:white ;
 }
 
 
@@ -114,16 +170,37 @@ nav{
 .info-2{
     margin: 5em auto;
 }
+.info-2{
+    padding: 5em 0;
+    background-image: url('../images/bg-1.jpg');
+    background-size: cover;
+    position: relative;
+}
+.info-2::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+}
+.info-2 > *{
+    z-index: 10;
+    position: relative;
+}
 
 /*SUBSCRIBE*/
 .subscribe{
-    background-color: rgb(131, 174, 180);
+    background-color: #6B9893;
     color: white;
     padding: 5em 0;
 }
 
 .subscribe input{
     width: 80%;
+    height: 2em;
     border: none;
     border-radius: 15px;
 }
@@ -131,9 +208,14 @@ nav{
     margin-right: 0;
     border: none;
     background-color: white;
-    color: rgb(131, 174, 180);
-    border-radius: 15px;
+    color: #6B9893;
+    border-radius: 20px;
     padding: 5px;
+    transition: all 0.3s;
+}
+.subscribe button:hover{
+    background-color: rgb(83, 107, 104);
+    color:white ;
 }
 
 
@@ -143,4 +225,35 @@ nav{
 }
 .footer ul{
     list-style-type: none;
+}
+.footer a{
+    text-decoration: none;
+    color: #6B9893;
+    transition: all 0.3s;
+}
+.footer a:hover{
+    color: rgb(83, 107, 104);
+}
+.footer .links i{
+    color: white;
+    background-color: #6B9893;
+    padding: 10px;
+    font-size:small;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.footer .links a:hover i{
+    color: white;
+    background-color: rgb(83, 107, 104);
+}
+
+
+
+@media screen and (max-width:400px){
+    .info-1 h1{
+        font-size: 3em;
+    }
+    .instructor h1{
+        font-size: 3em;
+    }
 }
