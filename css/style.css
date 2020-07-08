@@ -45,12 +45,23 @@ h1{
 /*HEADER*/
 .header{
     width: 100%;
-    height: 100vh;
-    margin: 5em 0;
+    height: 100%;
+    margin: 5em 0 3em 0;
 }
 .header h1{
     font-size: 5em;
-    font-weight: 300;
+}
+.header a{
+    background-color: #6B9893;
+    color: white;
+    padding: 0 2em;
+    border-radius: 1em;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+.header a:hover{
+    background-color: rgb(83, 107, 104);
+    transform: scale(1.1);
 }
 
 
@@ -61,12 +72,15 @@ h1{
     color: white;
     padding: 4em 0;
 }
+.menu h3{
+    font-family: 'Baloo 2', cursive;
+}
 
 
 /*RATING*/
 .rating{
     padding: 5em 0;
-    background-image: url('../images/bg-1.jpg');
+    background-image: url('../images/bg-1.webp');
     background-size: cover;
     position: relative;
 }
@@ -108,7 +122,7 @@ h1{
 .instructor a{
     background-color: white;
     color:#6B9893 ;
-    padding: 1em 2em;
+    padding: 1em 3em;
     text-decoration: none;
     transition: all 0.3s;
 }
@@ -132,7 +146,7 @@ h1{
 .info-1 a{
     background-color: #6B9893;
     color:white ;
-    padding: 1em 2em;
+    padding: 1em 3em;
     text-decoration: none;
     transition: all 0.3s;
 }
@@ -149,6 +163,10 @@ h1{
     color: white;
     padding: 5em 0;
 }
+.price h3 , .price h4{
+    font-family: 'Baloo 2', cursive;
+}
+
 .price .card{
     color: #6B9893;
     padding: 1em;
@@ -156,7 +174,7 @@ h1{
 .price a{
     background-color: #6B9893;
     color:white ;
-    padding: 1em 2em;
+    padding: 1em 3em;
     text-decoration: none;
     transition: all 0.3s;
 }
@@ -168,11 +186,11 @@ h1{
 
 /*INFO_2*/
 .info-2{
-    margin: 5em auto;
+    margin-bottom: 5em;
 }
 .info-2{
     padding: 5em 0;
-    background-image: url('../images/bg-1.jpg');
+    background-image: url('../images/bg-1.webp');
     background-size: cover;
     position: relative;
 }
@@ -255,5 +273,22 @@ h1{
     }
     .instructor h1{
         font-size: 3em;
+    }
+    .header .mb-5{
+        font-size: 3em;
+    }
+    .subscribe h2{
+        font-size: 1em;
+        margin-bottom: 1em;
+    }
+    .subscribe input{
+        margin-bottom: 1em;
+    }
+}
+
+
+@media screen and (max-width:800px){
+    .header .mb-5{
+        font-size: 4em;
     }
 }
